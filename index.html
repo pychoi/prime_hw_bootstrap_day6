@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Week 1 Weekend Challenge: Monthly Salary Cost</title>
+		<meta name="description" content="Webpage">
+		<link rel="stylesheet" href = "bootstrap.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</head>
+
+	<body>
+
+		<div class="container">
+			<div class="page-header">
+				<h1 class="text-center">Monthly Salary Cost Calculator</h1>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+
+					<form id="employeeinfo" role="form">
+						<div class="form-group">
+							<label for="employeename">Employee Name:</label>
+							<div class="input-group">
+								<span class="input-group-addon">Full Name</span>
+								<input type="text" id="employeename" name="employeename" placeholder=" e.g. John Doe"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="employeenumber">Employee ID Number:</label>
+							<div class="input-group">
+								<span class="input-group-addon">ID #</span>
+								<input type="text" id="employeenumber" name="employeenumber" placeholder=" 4-digit ID Number"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="jobtitle">Employee Position:</label>
+							<div class="input-group">
+								<span class="input-group-addon">Job Title</span>
+								<input type="text" id="jobtitle" name="jobtitle" placeholder=" e.g. Developer"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="salary">Employee Salary:</label>
+							<div class="input-group">
+								<span class="input-group-addon">$</span>
+								<input type="text" id="salary" name="salary" placeholder=" US Dollar"/>
+							</div>
+						</div>
+							<input type="submit" class="btn btn-primary" value="Submit Employee"/>
+					</form>
+
+				</div>
+
+
+				<div class="col-md-8" id="container">
+					<h1 id="costheadline" class="lead text-center">The total monthly salary cost is $<span class="displayvalue">0.00</span></h1>	
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
